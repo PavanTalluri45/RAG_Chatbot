@@ -1,0 +1,674 @@
+[
+  {
+    "chunk_id": 1,
+    "section": "",
+    "heading": "",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "**NovaSprint Labs** Employee Handbook  \n_Building products people love, together._\n\n|**Effective Date**|January 2026|\n|---|---|\n|**Version**|1.0|\n|**Applies To**|All NovaSprint Labs Employees|\n|**Classification**|Internal Use Only|"
+  },
+  {
+    "chunk_id": 2,
+    "section": "SECTION 1 · GETTING TO KNOW US",
+    "heading": "Welcome to NovaSprint Labs",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 1 · GETTING TO KNOW US  \n## Welcome to NovaSprint Labs  \nWelcome to the team! Whether this is your first job or your fifth, we are genuinely glad you are here. NovaSprint Labs is a small, fast-moving product company, and every person who joins us shapes what we build and how we work.  \nThis handbook is your guide to life at NovaSprint Labs. It explains our policies, our ways of working, and the practical details you need for your day-to-day job — from office hours to leave requests to who to contact when you need help.  \nWe have written this handbook in plain, simple language on purpose. You should not need a law degree to understand your own workplace. If anything here is unclear, your manager or the People Operations (HR) team is always happy to explain further.  \nThis is a living document. As NovaSprint Labs grows, our policies will evolve too. We will always announce updates in the #company-announcements Slack channel and update the version date on the cover page.\n\nOnce again, welcome aboard. We are excited to see what you will build with us."
+  },
+  {
+    "chunk_id": 3,
+    "section": "SECTION 1 · GETTING TO KNOW US",
+    "heading": "Our Story",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Story  \nNovaSprint Labs was founded in 2021 by three friends who were frustrated with clunky, overcomplicated project management tools. They believed small teams deserved software that was simple, fast, and actually enjoyable to use.  \nThat idea became SprintBoard, our flagship product — a lightweight project and task management tool built for startups and small teams. SprintBoard is now used by thousands of teams around the world to plan sprints, track tasks, and ship work faster.  \nWhat started as three people working out of a small shared office has grown into a team of around 25 people across engineering, design, operations, and customer support. We are still small enough that everyone knows everyone, and that is something we want to protect as we grow."
+  },
+  {
+    "chunk_id": 4,
+    "section": "SECTION 1 · GETTING TO KNOW US",
+    "heading": "Our Story",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "Today, NovaSprint Labs is a remote-friendly company with a home base office that the team uses for collaboration days and events. We are profitable, growing steadily, and focused on building a product our customers genuinely love.  \nOur journey is just getting started, and you are now a part of it."
+  },
+  {
+    "chunk_id": 5,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Mission, Vision, and Values",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 2 · MISSION, VISION, AND VALUES  \n## Mission, Vision, and Values"
+  },
+  {
+    "chunk_id": 6,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Our Mission",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Mission  \nTo help small teams do their best work by building software that is simple, fast, and stays out of the way."
+  },
+  {
+    "chunk_id": 7,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Our Vision",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Vision  \nA world where every small team, no matter how lean, has access to tools that feel like they were built just for them."
+  },
+  {
+    "chunk_id": 8,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Our Core Values",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Core Values  \n- **Build with Care** — we take pride in the quality of our work.  \n- **Move with Purpose** — we act quickly, but never carelessly.  \n- **Stay Curious** — we keep learning and asking questions.  \n- **Be Honest, Be Kind** — we give feedback directly and respectfully.  \n- **Own the Outcome** — we take responsibility for results, not just effort."
+  },
+  {
+    "chunk_id": 9,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Our Core Values in Action",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Core Values in Action  \nValues only matter if they show up in everyday behavior. Here is what each of our core values looks like in practice at NovaSprint Labs."
+  },
+  {
+    "chunk_id": 10,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Build with Care",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Build with Care  \nThis means testing your work before sharing it, writing clear documentation, and double-checking details that affect customers, even when no one is watching."
+  },
+  {
+    "chunk_id": 11,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Move with Purpose",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Move with Purpose  \nThis means making decisions with the information you have instead of waiting for perfect certainty, while still pausing on choices that are hard to reverse."
+  },
+  {
+    "chunk_id": 12,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Stay Curious",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Stay Curious  \nThis means asking “why” before “how,” trying new tools and approaches, and treating mistakes as something to learn from rather than hide."
+  },
+  {
+    "chunk_id": 13,
+    "section": "SECTION 2 · MISSION, VISION, AND VALUES",
+    "heading": "Be Honest, Be Kind · Own the Outcome",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Be Honest, Be Kind · Own the Outcome  \nThis means raising concerns early instead of letting them grow, and following through on commitments even after the exciting part of a project is over."
+  },
+  {
+    "chunk_id": 14,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "Team Structure Overview",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 3 · OUR TEAM  \n## Team Structure Overview  \nNovaSprint Labs has around 25 employees organized into four departments: Engineering, Design, Operations, and Customer Support. Each department has a lead who reports directly to the Co-Founders.  \nWe intentionally keep our structure flat. There are no layers of middle management between an individual contributor and a decision-maker. This means your ideas can reach leadership quickly, and it also means everyone is expected to communicate clearly and proactively.  \nDepartments at NovaSprint Labs work closely together rather than in silos. Engineers sit in on design reviews, support specialists share customer feedback directly with product teams, and operations supports every department behind the scenes.  \nThe next few pages introduce each department, its responsibilities, and roughly how many people work in it today. Headcounts are approximate and grow as the company grows."
+  },
+  {
+    "chunk_id": 15,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "Engineering Department",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Engineering Department  \nThe Engineering department is the largest team at NovaSprint Labs, with around 10 people. Engineering builds, tests, and maintains SprintBoard and the systems behind it.  \nThe department is organized into three informal groups: Frontend (the SprintBoard interface), Backend (servers, databases, and APIs), and Quality Assurance (testing and release quality). Many engineers work across more than one area.  \nEngineering works in two-week sprints, with planning on the first Monday and a demo on the final Friday. Daily standups keep the team aligned on progress and blockers.  \nThe Engineering Lead reports to the Co-Founders and represents engineering in company-wide planning discussions."
+  },
+  {
+    "chunk_id": 16,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "Design Department",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Design Department  \nThe Design department has around 4 people and is responsible for product design, user experience research, and the NovaSprint Labs brand.  \nDesigners work closely with engineers from the earliest stages of a feature, sketching workflows and gathering feedback before any code is written. This keeps SprintBoard simple and consistent for our users.  \nThe team also maintains our design system, a shared library of components and styles, so that every part of SprintBoard looks and feels like one connected product.  \nDesign partners with Customer Support to review user feedback regularly, since support conversations are one of our richest sources of design insight."
+  },
+  {
+    "chunk_id": 17,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "Operations Department",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Operations Department  \nThe Operations department has around 5 people and keeps the company running smoothly. This includes People Operations (HR), finance, recruiting, and general administration.  \nPeople Operations manages hiring, onboarding, payroll, benefits, and employee records. If you have a question about your paycheck, your leave balance, or your benefits, this is the team to contact.  \nThe finance function tracks company spending, processes reimbursements, and manages vendor relationships. Recruiting works with department leads to hire new team members as the company grows.  \nOperations also organizes company events, manages our office space, and handles equipment procurement for new hires."
+  },
+  {
+    "chunk_id": 18,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "Customer Support Department",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Customer Support Department  \nThe Customer Support department has around 6 people and is the primary point of contact between NovaSprint Labs and our customers.  \nThe team handles support tickets, live chat, and onboarding calls for new SprintBoard customers. They troubleshoot issues, answer product questions, and escalate bugs to Engineering when needed.  \nCustomer Support also gathers feature requests and feedback, which feeds directly into our product roadmap discussions. Many of SprintBoard's best features started as a pattern noticed in support conversations.  \nThe team aims to respond to all customer tickets within one business day, and most simple questions are resolved within a few hours."
+  },
+  {
+    "chunk_id": 19,
+    "section": "SECTION 3 · OUR TEAM",
+    "heading": "How We Work Together",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## How We Work Together  \nEvery employee at NovaSprint Labs reports to a department lead, who in turn reports to one of the Co-Founders. This keeps reporting lines short and clear.  \nWe use a simple weekly rhythm to stay aligned: each department holds a Monday planning meeting, a company-wide update is shared every Friday afternoon, and one-on-one meetings between employees and managers happen at least once every two weeks.  \nCross-department projects are common, especially between Engineering, Design, and Support. When this happens, one person is named the project owner to keep decisions moving and avoid confusion about who is responsible.  \nIf you are ever unsure who to go to with a question, your manager is always your first point of contact, and the #ask-anything Slack channel is open to everyone."
+  },
+  {
+    "chunk_id": 20,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Office Hours",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 4 · TIME AND LEAVE  \n## Office Hours  \nNovaSprint Labs follows a flexible working schedule built around a shared core hours window. Standard working hours are 9:00 AM to 6:00 PM, Monday through Friday, including a one-hour lunch break.  \nCore hours are 11:00 AM to 4:00 PM. This is the window when everyone is expected to be available for meetings and quick questions, regardless of when their individual day starts or ends.  \nOutside of core hours, employees may adjust their start and end times to suit their personal schedule, as long as they complete their working hours and stay reachable for urgent matters.  \nOur home base office is open for anyone who prefers working in person, and the whole team gathers there on the first Tuesday of every month for an in-person collaboration day."
+  },
+  {
+    "chunk_id": 21,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Attendance Policy",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Attendance Policy  \nWe track attendance through trust and simple communication rather than strict clock-in systems. What matters most is that you complete your work and stay available during core hours.  \nIf you expect to start late, finish early, or step away during the day, post a short note in your team's Slack channel. This keeps your teammates informed without requiring formal approval for small schedule changes.  \nIf you are sick or unable to work, message your manager as early as possible, ideally before your usual start time. There is no need to share medical details — a simple heads-up is enough.  \nRepeated unannounced absences or consistent unavailability during core hours will be addressed by your manager through a direct, supportive conversation, not through automatic penalties."
+  },
+  {
+    "chunk_id": 22,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Leave Policy Overview",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Leave Policy Overview  \nNovaSprint Labs offers paid leave so employees can rest, recover, and manage life outside of work. We believe taking leave is part of doing good, sustainable work — not something to feel guilty about.  \nAll full-time employees are eligible for paid leave starting from their first day, though new joiners are encouraged to settle into their role for the first few weeks before booking longer trips.  \nLeave balances are tracked in our HR portal and accrue monthly. Unused annual leave can be carried forward into the next year up to a maximum of 10 days, after which it resets.  \nThe table on the next page summarizes the different types of leave available at NovaSprint Labs, including their purpose, typical duration, and approval requirements."
+  },
+  {
+    "chunk_id": 23,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Leave Types Overview",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Leave Types Overview  \nThe table below summarizes every type of leave available to NovaSprint Labs employees. Refer to this page whenever you need a quick answer about a specific leave type.\n\n|**Leave Type**|**Purpose**|**Duration**|**Approval Needed**|\n|---|---|---|---|\n|Annual Leave|Planned personal time off,<br>vacations, and rest|18 days per year|Manager approval|\n|Sick Leave|Recovering from illness or<br>medical appointments|10 days per year|Manager notified|\n|Casual Leave|Short personal matters or<br>last-minute needs|6 days per year|Manager approval|\n|Parental Leave|Welcoming a new child into the<br>family|12 weeks|Manager + HR<br>approval|\n|Bereavement<br>Leave|Loss of an immediate family<br>member|5 days per event|Manager notified|\n|Unpaid Leave|Extended time off beyond paid<br>balance|Case by case|Manager + HR<br>approval|\n|Public Holidays|Company-observed national<br>holidays|As per calendar|Pre-scheduled, no<br>request needed|\n\n_Note: Leave allowances are prorated for employees who join partway through the year. Speak with People Operations for your exact balance._"
+  },
+  {
+    "chunk_id": 24,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "How to Apply for Leave",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## How to Apply for Leave  \nApplying for leave at NovaSprint Labs is simple and is done entirely through our HR portal. This keeps a clear, searchable record for both you and your manager."
+  },
+  {
+    "chunk_id": 25,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Standard Leave Requests",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Standard Leave Requests  \n- Submit your request in the HR portal at least 3 working days in advance, where possible.  \n- Your manager reviews the request and checks team coverage for the requested dates.  \n- HR confirms your leave balance and finalizes the request.  \n- Once approved, your leave appears automatically on the shared team calendar."
+  },
+  {
+    "chunk_id": 26,
+    "section": "SECTION 4 · TIME AND LEAVE",
+    "heading": "Emergency or Last-Minute Leave",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Emergency or Last-Minute Leave  \nFor sudden illness or emergencies, message your manager directly as soon as you can, even before submitting the formal request. You can complete the HR portal entry once things have settled down.  \nA simple flowchart of the full leave approval process is included later in this handbook, on the Leave Approval Process page."
+  },
+  {
+    "chunk_id": 27,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Remote Work Policy",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 5 · WORKING AT NOVASPRINT  \n## Remote Work Policy  \nNovaSprint Labs operates as a remote-friendly company. Most employees work from home or a location of their choice most of the week, with the team gathering in person once a month for collaboration days.  \nEvery full-time employee is eligible to work remotely, regardless of department, as long as their role does not require physical presence, such as managing on-site office logistics.  \nNew employees typically work from the home base office for their first week to make onboarding and relationship-building easier, after which they can transition to their preferred work setup.  \nNovaSprint Labs provides each remote employee with a laptop and a one-time home office setup allowance to cover essentials like a chair, monitor, or desk."
+  },
+  {
+    "chunk_id": 28,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Remote Work Guidelines and Etiquette",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Remote Work Guidelines and Etiquette  \nWorking remotely comes with freedom, and also with a few shared expectations that keep the team running smoothly.  \n- Be reachable on Slack during core hours (11:00 AM – 4:00 PM).  \n- Turn your camera on for scheduled video meetings whenever possible; this helps maintain team connection.  \n- Work from a reasonably quiet, private space during calls that involve customer or company-sensitive information.  \n- Update your Slack status when you step away for an extended period during working hours.  \n- Use a stable internet connection; reach out to Operations if connectivity is a recurring problem.  \nIf you plan to work from a different city or country temporarily, let your manager and People Operations know in advance, since this can affect time zone overlap and, in some cases, tax or legal requirements.  \n**SECTION 5 · WORKING AT NOVASPRINT**"
+  },
+  {
+    "chunk_id": 29,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Code of Conduct",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Code of Conduct  \nOur Code of Conduct describes the basic standards of behavior we expect from everyone at NovaSprint Labs, regardless of role or seniority.  \nAct with honesty and integrity. Represent your work accurately, give credit where it is due, and avoid misleading customers, colleagues, or leadership.  \nTreat company resources responsibly. This includes equipment, software licenses, and working time. Personal use of company tools should be reasonable and should never interfere with your work.  \nAvoid conflicts of interest. If you have a personal or financial relationship that could affect your judgment at work, such as hiring a close friend or working a competing job, disclose it to People Operations.  \nViolations of the Code of Conduct are taken seriously and are handled through a fair process involving your manager and People Operations."
+  },
+  {
+    "chunk_id": 30,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Respect and Inclusion at Work",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Respect and Inclusion at Work  \nNovaSprint Labs is committed to a workplace where everyone feels respected, regardless of gender, race, religion, age, disability, sexual orientation, or background.  \nWe do not tolerate harassment, bullying, or discrimination of any kind. This includes behavior in the office, in remote meetings, and in written communication such as Slack or email.  \nIf you experience or witness behavior that feels disrespectful or unsafe, you are encouraged to speak up. You can raise the concern with your manager, any member of People Operations, or through the confidential feedback form linked in the HR portal.  \nAll concerns are taken seriously and reviewed promptly and privately. NovaSprint Labs does not allow retaliation against anyone who raises a concern in good faith.  \nBuilding an inclusive workplace is everyone's responsibility, not just a policy on paper."
+  },
+  {
+    "chunk_id": 31,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Communication Guidelines",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Communication Guidelines  \nClear communication is essential for a small, remote-friendly team like ours. These guidelines help us stay aligned without drowning in unnecessary meetings or messages.  \nDefault to written communication for anything that needs a record, such as decisions, requests, or instructions. Use calls or meetings for discussions that benefit from real-time conversation.  \nKeep messages clear and specific. Instead of “Can we talk?”, try “Can we talk about the delay on the export feature? I have a quick question about scope.” This helps the other person prepare and respond faster.  \nRespond to direct Slack messages within one business day, even if it is just to say you will follow up later. Silence creates uncertainty on a small team.  \nAssume good intent. Text-based communication can sometimes sound blunter than intended; when in doubt, ask for clarification before assuming the worst."
+  },
+  {
+    "chunk_id": 32,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Our Communication Tools",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Our Communication Tools  \nNovaSprint Labs uses a small set of core tools to keep communication simple and consistent across the company.\n\n|**Tool**|**Primary Use**|\n|---|---|\n|Slack|Daily conversations, quick questions, and team updates|\n|Email|Formal communication, external partners, and contracts|\n|Zoom|Video meetings, stand-ups, and customer calls|\n|Notion|Documentation, meeting notes, and project planning|\n|HR Portal|Leave requests, payroll, and employee records|"
+  },
+  {
+    "chunk_id": 33,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Our Communication Tools",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "Each department may use one or two additional specialized tools, such as a code repository for Engineering or a design tool for the Design team. Your manager will walk you through any tools specific to your role during onboarding."
+  },
+  {
+    "chunk_id": 34,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "Performance and Feedback Policy",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Performance and Feedback Policy  \nWe believe feedback should be frequent, specific, and kind. Waiting months to share important feedback rarely helps anyone improve.  \nEvery employee sets goals with their manager at the start of each quarter. These goals are simple, written down, and revisited regularly rather than locked away until review time.  \nManagers hold one-on-one meetings with each direct report at least every two weeks. These meetings are a space for feedback, questions, and career conversations, not just status updates.  \nFeedback at NovaSprint Labs flows in every direction. Employees are encouraged to share feedback with their managers and peers, not just receive it from above.  \nPerformance feedback is meant to support growth. It is never used to surprise or embarrass anyone; if something is a concern, you will hear about it early and directly.  \n**SECTION 5 · WORKING AT NOVASPRINT**"
+  },
+  {
+    "chunk_id": 35,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "The Review Cycle",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## The Review Cycle  \nNovaSprint Labs runs a formal performance review twice a year, in June and December. This is in addition to the regular one-on-one feedback employees receive throughout the year."
+  },
+  {
+    "chunk_id": 36,
+    "section": "SECTION 5 · WORKING AT NOVASPRINT",
+    "heading": "How the Review Works",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## How the Review Works  \n- Self-assessment: you reflect on your goals, wins, and challenges from the period.  \n- Peer feedback: one or two colleagues you work closely with share input.  \n- Manager review: your manager combines this input with their own observations.  \n- Review conversation: you and your manager discuss the review together and set goals for the next period.  \nReviews at NovaSprint Labs do not use numeric scores or forced rankings. The focus is on clear, constructive conversation about growth, strengths, and areas to develop.  \nCompensation conversations, where relevant, happen separately from the review conversation so that growth feedback and pay discussions do not get mixed together."
+  },
+  {
+    "chunk_id": 37,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Security and Confidentiality",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 6 · SAFETY AND SECURITY  \n## Security and Confidentiality  \nAs a software company, protecting customer data and company information is one of our most important responsibilities. Every employee plays a part in keeping NovaSprint Labs secure.  \nAll employees sign a confidentiality agreement when they join. This covers customer data, source code, business plans, and any other non-public company information.  \nConfidential information should never be shared outside the company, including with friends, family, or on personal social media, even after you leave NovaSprint Labs.  \nIf you are unsure whether something counts as confidential, treat it as confidential and check with your manager or People Operations before sharing it.  \nCustomer data should only be accessed when needed for your work, and only through approved company systems, never copied to personal devices or accounts."
+  },
+  {
+    "chunk_id": 38,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Data Security Practices",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Data Security Practices  \nGood security habits protect both the company and our customers. These practices are simple but make a real difference.  \n- Use two-factor authentication (2FA) on all company accounts, including email, Slack, and the code repository.  \n- Use a unique, strong password for each work account, ideally managed through a password manager.  \n- Lock your laptop screen whenever you step away, even at home.  \n- Avoid using public Wi-Fi for work without a VPN; use your phone's hotspot if needed.  \n- Never share your login credentials with anyone, including colleagues.  \nIf you ever suspect a security issue, such as a phishing email, a lost device, or unusual account activity, report it immediately to the #it-support Slack channel. Acting quickly is more important than figuring out exactly what happened first."
+  },
+  {
+    "chunk_id": 39,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Workplace Health and Safety",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Workplace Health and Safety  \nNovaSprint Labs is committed to providing a safe and healthy environment, whether you work from our home base office or remotely.  \nIn the office, please report any safety hazards, such as loose cables or broken furniture, to Operations right away so they can be fixed quickly.  \nIf you work from home, we encourage you to set up an ergonomic workspace. NovaSprint Labs provides a home office allowance that can be used for a proper chair, monitor stand, or keyboard.  \nTake regular breaks during the workday. Sitting for long stretches without moving is one of the most common health issues for desk-based teams, and short breaks genuinely help.  \nIf you experience any work-related injury or health concern, let your manager and People Operations know so they can support you appropriately.  \n**SECTION 6 · SAFETY AND SECURITY**"
+  },
+  {
+    "chunk_id": 40,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Emergency Procedures",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Emergency Procedures  \nWhile emergencies are rare, it is important that everyone knows what to do if one occurs, especially at our home base office."
+  },
+  {
+    "chunk_id": 41,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Office Emergencies",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Office Emergencies  \n- In case of fire, leave the building immediately using the nearest marked exit and gather at the assembly point outside.  \n- A first aid kit is located in the office kitchen; the nearest fire extinguisher is by the main entrance.  \n- Report any office emergency to Operations and building security as soon as it is safe to do so."
+  },
+  {
+    "chunk_id": 42,
+    "section": "SECTION 6 · SAFETY AND SECURITY",
+    "heading": "Personal Emergencies",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Personal Emergencies  \nIf you face a personal emergency during work hours, your wellbeing comes first. Step away from work, inform your manager when you are able to, and use emergency or casual leave as needed — no advance approval is required in genuine emergencies."
+  },
+  {
+    "chunk_id": 43,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Employee Benefits",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 7 · REWARDS AND MILESTONES  \n## Employee Benefits  \nWe want NovaSprint Labs to be a genuinely good place to work, and our benefits package reflects that. Benefits apply to all full-time employees from their first day, unless noted otherwise.  \nHealth coverage: NovaSprint Labs provides health insurance coverage for every full-time employee, with an option to add immediate family members.  \nTime off: in addition to the leave types described earlier in this handbook, employees receive all public holidays observed by the company.  \nEquipment: every employee receives a company laptop and any role-specific equipment needed to do their job well.  \nGrowth: we support continuous learning through a yearly learning and development stipend, described in more detail on the next page."
+  },
+  {
+    "chunk_id": 44,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Benefits Details",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Benefits Details\n\n|**Benefit**|**What It Covers**|\n|---|---|\n|Health Insurance|Hospitalization and outpatient coverage for employee and family|\n|Learning Stipend|Yearly budget for courses, books, or conferences|\n|Home Office Allowance|One-time setup budget for remote workspace essentials|\n|Wellness Support|Reimbursement for gym membership or wellness apps|\n|Team Events|Monthly in-person collaboration day and an annual offsite|"
+  },
+  {
+    "chunk_id": 45,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Benefits Details",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "Exact benefit amounts and eligibility details are documented in the HR portal and may be updated periodically as the company grows. People Operations can answer any specific questions about your individual benefits.  \n**SECTION 7 · REWARDS AND MILESTONES**"
+  },
+  {
+    "chunk_id": 46,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Onboarding Process",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Onboarding Process  \nOur onboarding process is designed to help you feel confident and settled in your first few weeks at NovaSprint Labs."
+  },
+  {
+    "chunk_id": 47,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Before Your First Day",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Before Your First Day  \n- People Operations sends your offer letter, contract, and a welcome email with setup instructions.  \n- Your laptop and equipment are prepared and shipped, or ready for pickup at the office.  \n- Your accounts (email, Slack, HR portal) are created in advance."
+  },
+  {
+    "chunk_id": 48,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Day One",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Day One  \n- You are paired with an onboarding buddy, a teammate who helps answer everyday questions.  \n- You meet your manager and team in a welcome call or in-person session.  \n- You complete basic setup: tools, accounts, and an introduction to this handbook."
+  },
+  {
+    "chunk_id": 49,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Your First Two Weeks",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Your First Two Weeks"
+  },
+  {
+    "chunk_id": 50,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Week One: Settling In",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Week One: Settling In  \nYour first week is focused on orientation. You will learn how your department works, meet key teammates across the company, and begin small, low-pressure tasks to get familiar with our tools and codebase or workflows."
+  },
+  {
+    "chunk_id": 51,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Week Two: Getting Hands-On",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Week Two: Getting Hands-On  \nBy your second week, you will typically take on your first real piece of work, with close support from your manager and onboarding buddy. The goal is progress and learning, not perfection."
+  },
+  {
+    "chunk_id": 52,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Check-Ins",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Check-Ins  \nYour manager will check in with you at the end of week one and again at the end of week two to see how things are going, answer questions, and adjust your ramp-up if needed.  \nBy the end of your first month, you should have a clear sense of your role, your team, and how your work connects to NovaSprint Labs' broader goals."
+  },
+  {
+    "chunk_id": 53,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Exit Process",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Exit Process  \nWhether you are moving on to a new opportunity or another life change, we want your departure from NovaSprint Labs to be smooth and respectful, just like your time here.  \nEmployees are asked to provide at least 4 weeks' written notice before their last working day, by informing their manager and People Operations directly.  \nDuring your notice period, you and your manager will create a handover plan to transfer your responsibilities, document any open work, and introduce teammates to anything they need to take over.  \nPeople Operations will schedule an exit interview before your last day. This is an honest, confidential conversation about your experience at NovaSprint Labs, and your feedback genuinely shapes how we improve.  \nYour final pay, including any unused leave balance, will be settled in line with local employment regulations."
+  },
+  {
+    "chunk_id": 54,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Exit Checklist",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Exit Checklist  \nTo make your last days simple, here is what to expect during the exit process.  \n- Return all company equipment, including your laptop and any accessories, by your last working day.  \n- Your access to company accounts and systems will be revoked on your last day for security reasons.  \n- Complete your handover document and brief your manager or teammate on any pending work.  \n- Attend your exit interview with People Operations.  \n- Receive your relieving letter and final settlement details by email within the following pay cycle.  \nWe hope every NovaSprint Labs employee leaves on good terms and would consider returning in the future. Many of our best hires have been former teammates who came back."
+  },
+  {
+    "chunk_id": 55,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "Leave Approval Process",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Leave Approval Process  \nThe diagram below shows the standard path a leave request takes, from submission to final decision. This mirrors the steps described earlier in How to Apply for Leave."
+  },
+  {
+    "chunk_id": 56,
+    "section": "SECTION 7 · REWARDS AND MILESTONES",
+    "heading": "1. Employee Submits Request",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## 1. Employee Submits Request  \n**==> picture [392 x 328] intentionally omitted <==**  \n**----- Start of picture text -----**<br>\nLeave request raised in the HR portal with dates and reason<br>2. Manager Review<br>Manager checks team coverage and approves or sends back for changes<br>3. HR Check<br>HR verifies leave balance and confirms policy compliance<br>4. Final Decision<br>HR updates the leave status in the system<br>Approved Rejected<br>Calendar blocked, team notified Reason shared with employee<br>**----- End of picture text -----**<br>  \n_Most requests are reviewed within 2 working days. You will receive a notification once a decision is made._"
+  },
+  {
+    "chunk_id": 57,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "FAQ — General Questions",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 8 · REFERENCE  \n## FAQ — General Questions"
+  },
+  {
+    "chunk_id": 58,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What does NovaSprint Labs actually build?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What does NovaSprint Labs actually build?  \nA: We build SprintBoard, a simple project and task management tool for small teams, along with the systems that support it."
+  },
+  {
+    "chunk_id": 59,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: How big is the company right now?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: How big is the company right now?  \nA: NovaSprint Labs has around 25 employees across Engineering, Design, Operations, and Customer Support."
+  },
+  {
+    "chunk_id": 60,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Who do I contact if I have a question this handbook doesn't answer?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Who do I contact if I have a question this handbook doesn't answer?  \nA: Start with your manager, or reach out to People Operations through the #ask-anything Slack channel or the HR portal."
+  },
+  {
+    "chunk_id": 61,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Is this handbook legally binding?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Is this handbook legally binding?  \nA: This handbook describes our policies and culture in plain language. Your offer letter and employment contract remain the formal legal documents governing your employment."
+  },
+  {
+    "chunk_id": 62,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: How often is this handbook updated?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: How often is this handbook updated?  \nA: We review and update it periodically as the company grows. Updates are announced in #company-announcements."
+  },
+  {
+    "chunk_id": 63,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "FAQ — Leave and Attendance",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## FAQ — Leave and Attendance"
+  },
+  {
+    "chunk_id": 64,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: How many annual leave days do I get?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: How many annual leave days do I get?  \nA: Full-time employees receive 18 annual leave days per year, in addition to sick, casual, and other leave types listed in the Leave Types Overview table."
+  },
+  {
+    "chunk_id": 65,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What happens if I don't use all my leave this year?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What happens if I don't use all my leave this year?  \nA: You can carry forward up to 10 unused annual leave days into the next year. Anything beyond that resets."
+  },
+  {
+    "chunk_id": 66,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Do I need approval for sick leave?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Do I need approval for sick leave?  \nA: No formal approval is required, but please notify your manager as early as possible on the day you are unwell."
+  },
+  {
+    "chunk_id": 67,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Can I take leave during my first month?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Can I take leave during my first month?  \nA: Yes, leave is available from day one, though we encourage new joiners to settle in before booking longer trips."
+  },
+  {
+    "chunk_id": 68,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What if my leave request is rejected?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What if my leave request is rejected?  \nA: Your manager will explain the reason, usually related to team coverage, and help you find an alternative date."
+  },
+  {
+    "chunk_id": 69,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "FAQ — Remote Work and IT",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## FAQ — Remote Work and IT"
+  },
+  {
+    "chunk_id": 70,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Can I work fully remote?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Can I work fully remote?  \nA: Yes, most roles at NovaSprint Labs are remote-friendly. New joiners typically spend their first week at the home base office for onboarding."
+  },
+  {
+    "chunk_id": 71,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What if my laptop breaks or stops working?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What if my laptop breaks or stops working?  \nA: Message the #it-support Slack channel right away. Operations will arrange a repair or replacement as quickly as possible."
+  },
+  {
+    "chunk_id": 72,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Can I work from another country temporarily?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Can I work from another country temporarily?  \nA: Yes, but let your manager and People Operations know in advance, since this can affect time zone overlap and legal requirements."
+  },
+  {
+    "chunk_id": 73,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Do I need to use a VPN?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Do I need to use a VPN?  \nA: Yes, when working from public Wi-Fi, please use the company VPN or your phone's hotspot to keep company data secure."
+  },
+  {
+    "chunk_id": 74,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What if I lose my work device?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What if I lose my work device?  \nA: Report it immediately to #it-support so the team can secure your accounts and arrange a replacement."
+  },
+  {
+    "chunk_id": 75,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "FAQ — Performance and Growth",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## FAQ — Performance and Growth"
+  },
+  {
+    "chunk_id": 76,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: How often are performance reviews held?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: How often are performance reviews held?  \nA: Formal reviews happen twice a year, in June and December, alongside regular one-on-one feedback throughout the year."
+  },
+  {
+    "chunk_id": 77,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Are reviews tied to scores or rankings?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Are reviews tied to scores or rankings?  \nA: No, NovaSprint Labs does not use numeric scores or forced rankings. Reviews focus on constructive, two-way conversation."
+  },
+  {
+    "chunk_id": 78,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: What is the learning stipend, and how do I use it?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: What is the learning stipend, and how do I use it?  \nA: It's a yearly budget for courses, books, or conferences. Submit your request and receipt through the HR portal for reimbursement."
+  },
+  {
+    "chunk_id": 79,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Can I request a different project or role?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Can I request a different project or role?  \nA: Yes, bring it up with your manager during a one-on-one. Internal moves are common as the company grows."
+  },
+  {
+    "chunk_id": 80,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Q: Who decides on promotions?",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Q: Who decides on promotions?  \nA: Your manager proposes promotions based on your growth and impact, which are then reviewed with the Co-Founders."
+  },
+  {
+    "chunk_id": 81,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Quick Reference Directory",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Quick Reference Directory  \nUse this page as a quick lookup for common questions and contacts at NovaSprint Labs.\n\n|**Need Help With...**|**Contact**|\n|---|---|\n|Leave, payroll, or benefits|people@novasprintlabs.com|\n|Laptop or account issues|#it-support on Slack|\n|General questions|#ask-anything on Slack|\n|Workplace concerns|hr-confidential@novasprintlabs.com|\n|Office and equipment|operations@novasprintlabs.com|\n|Customer or product questions|Your department lead|\n\nFor anything urgent outside of business hours, contact your manager directly through Slack or phone."
+  },
+  {
+    "chunk_id": 82,
+    "section": "SECTION 8 · REFERENCE",
+    "heading": "Glossary of Terms",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Glossary of Terms  \nA few common terms you will hear around NovaSprint Labs, explained simply.\n\n|**Term**|**Meaning**|\n|---|---|\n|PTO|Paid Time Off, used loosely to refer to annual or casual leave|\n|WFH|Work From Home|\n|1:1|A one-on-one meeting between an employee and their manager|\n|Standup|A short daily check-in meeting to share progress and blockers|\n|Sprint|A two-week work cycle used by the Engineering team|\n|OKR|Objectives and Key Results, a goal-setting framework used quarterly|\n|Buddy|A teammate assigned to support a new hire during onboarding|"
+  },
+  {
+    "chunk_id": 83,
+    "section": "SECTION 9 · CLOSING",
+    "heading": "Final Summary",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "# SECTION 9 · CLOSING  \n## Final Summary  \nThis handbook covered the essentials of working at NovaSprint Labs: who we are, how our team is organized, how time off and remote work function, how we communicate and give feedback, and how we keep ourselves and our customers' data safe.  \nNo handbook can cover every situation. When you are unsure about something, use good judgment, lean on our core values, and ask your manager or People Operations. We would always rather you ask than guess.  \nThis is a living document, and it will continue to evolve as NovaSprint Labs grows. You can always find the latest version in the HR portal, and major updates will be announced in Slack.  \nThank you for being part of NovaSprint Labs. We are excited to build SprintBoard, and our company, together with you."
+  },
+  {
+    "chunk_id": 84,
+    "section": "SECTION 9 · CLOSING",
+    "heading": "Employee Acknowledgment",
+    "subheading": "",
+    "source_file": "Employee_Handbook.md",
+    "content": "## Employee Acknowledgment  \nPlease read the statement below carefully. Your manager or People Operations will provide instructions on how to confirm this acknowledgment in the HR portal.  \nI confirm that I have received and read the NovaSprint Labs Employee Handbook. I understand that it describes the company's current policies and practices, and that it may be updated from time to time. I understand that this handbook is a guide and does not replace my individual employment contract.  \n**Employee Name:** _____________________________ **Signature:** _____________________________ **Date:** _____________________________  \n_NovaSprint Labs, Inc. — Employee Handbook, Version 1.0, Effective January 2026._"
+  }
+]
