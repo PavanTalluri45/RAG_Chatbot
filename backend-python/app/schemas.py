@@ -25,6 +25,7 @@ class Timing(BaseModel):
 
     cache_hit: bool = False
     validation_time: float = 0.0
+    conversation_detection_time: float = 0.0
     embedding_time: float = 0.0
     retrieval_time: float = 0.0
     prompt_build_time: float = 0.0

@@ -81,6 +81,7 @@ async def chat(request: ChatRequest):
             timing=Timing(
                 cache_hit=result["timing"].get("cache_hit", False),
                 validation_time=result["timing"].get("validation_time", 0),
+                conversation_detection_time=result["timing"].get("conversation_detection_time", 0),
                 embedding_time=result["timing"].get("embedding_time", 0),
                 retrieval_time=result["timing"].get("retrieval_time", 0),
                 prompt_build_time=result["timing"].get("prompt_build_time", 0),
