@@ -1,83 +1,32 @@
-# Employee Handbook RAG Chatbot
+# Employee Handbook AI Assistant
 
-A production-ready Retrieval-Augmented Generation (RAG) chatbot that enables employees to ask natural language questions about an Employee Handbook using semantic search and Google's Gemini AI models.
+A production-ready AI-powered Employee Handbook Assistant that enables employees to ask natural language questions about company policies using Retrieval-Augmented Generation (RAG), semantic search, and Google's Gemini AI.
 
-The application combines a modern AI chat interface with a scalable RAG backend, providing fast, accurate, and context-aware responses.
+The application combines a modern conversational interface with a scalable RAG architecture to deliver fast, accurate, and context-aware responses grounded entirely in the employee handbook.
 
-> **Project Status:** 🚀 Development Complete | 🚧 Deployment Pending
+> **Project Status:** ✅ Production Ready | 🚀 Deployed
 
 ---
 
 # Overview
 
-The Employee Handbook RAG Chatbot allows users to interact with an employee handbook using natural language.
+The Employee Handbook AI Assistant transforms a traditional employee handbook into an intelligent conversational assistant.
 
-Instead of keyword matching, the system performs semantic search over vector embeddings stored in Chroma Cloud and generates context-aware answers using Google's Gemini models.
+Instead of keyword searching through lengthy documents, users can ask questions naturally. The system retrieves the most relevant handbook content using semantic vector search and generates grounded responses using Google's Gemini models.
 
-The application follows a production-oriented architecture with separate frontend and backend services.
-
----
-
-# Current Status
-
-## ✅ Backend (Completed)
-
-* Markdown document processing
-* Header-aware chunking using LangChain
-* Metadata generation
-* Gemini Embeddings
-* Chroma Cloud vector database
-* Semantic retrieval
-* Prompt builder
-* Gemini LLM integration
-* Upstash Redis caching
-* FastAPI REST API
-* Structured logging
-* Error handling
-* Retry mechanism
-* Performance monitoring
-* Production-ready API architecture
+The application follows a modern production architecture with a decoupled frontend and backend.
 
 ---
 
-## ✅ Frontend (Completed)
+# Live Deployment
 
-Built using:
+### Frontend
 
-* Next.js (App Router)
-* JavaScript
-* Tailwind CSS
-* shadcn/ui
-* Supabase Authentication
+Deployed on **Vercel**
 
-Features:
+### Backend
 
-* Modern AI chat interface
-* Responsive layout
-* Light & Dark theme
-* Markdown rendering
-* Table rendering
-* Chat history
-* New Chat
-* Soft Delete Chat
-* Delete All History
-* Authentication
-* Protected routes
-* Conversation management
-* Loading states
-* Typing indicator
-* Production-ready UI
-
----
-
-## 🚧 Deployment (Pending)
-
-Deployment is the final remaining step.
-
-Planned deployment:
-
-* **Frontend:** Vercel
-* **Backend:** Railway
+Deployed on **Vercel (FastAPI)**
 
 ---
 
@@ -85,24 +34,25 @@ Planned deployment:
 
 ## Frontend
 
-* Next.js (App Router)
-* JavaScript
-* Tailwind CSS
-* shadcn/ui
-* Supabase Authentication
+- Next.js (App Router)
+- JavaScript
+- Tailwind CSS
+- shadcn/ui
+- Supabase Authentication
+- React Markdown
 
 ---
 
 ## Backend
 
-* Python
-* FastAPI
-* LangChain
-* Google Gemini API
-* Gemini Embedding Model
-* Chroma Cloud
-* Upstash Redis
-* Pydantic
+- Python
+- FastAPI
+- LangChain
+- Google Gemini API
+- Gemini Embedding Model
+- Chroma Cloud
+- Upstash Redis
+- Pydantic
 
 ---
 
@@ -118,7 +68,7 @@ Header-aware Chunking
 Gemini Embeddings
             │
             ▼
-Chroma Cloud
+Chroma Cloud Vector Database
             │
             ▼
 Semantic Retrieval
@@ -127,63 +77,63 @@ Semantic Retrieval
 Prompt Builder
             │
             ▼
-Gemini LLM
+Google Gemini
             │
             ▼
-Generated Response
+Grounded AI Response
 ```
 
 ---
 
-# Features
+# Key Features
 
-* Retrieval-Augmented Generation (RAG)
-* Semantic Vector Search
-* Gemini Embeddings
-* Chroma Cloud Vector Database
-* Google Gemini LLM
-* Upstash Redis Response Caching
-* Markdown Rendering
-* Table Rendering
-* Conversation History
-* Authentication
-* Soft Delete Chats
-* Responsive AI Chat UI
-* Dark & Light Theme
-* REST API
-* Modular Architecture
-* Structured Logging
-* Error Handling
-* Retry Logic
-* Production-ready Design
+- AI-powered Employee Handbook Assistant
+- Retrieval-Augmented Generation (RAG)
+- Semantic Vector Search
+- Gemini Embeddings
+- Chroma Cloud Vector Database
+- Google Gemini LLM
+- FastAPI REST Backend
+- Upstash Redis Response Caching
+- Markdown Rendering
+- Table Rendering
+- Responsive Chat Interface
+- Conversation History
+- Authentication with Supabase
+- Soft Delete Conversations
+- Dark & Light Theme
+- Structured Logging
+- Retry Mechanism
+- Performance Monitoring
+- Production-ready Architecture
 
 ---
 
 # API Endpoints
 
-| Method | Endpoint  | Description     |
-| ------ | --------- | --------------- |
-| GET    | `/`       | API Information |
-| GET    | `/health` | Health Check    |
-| POST   | `/chat`   | Ask a Question  |
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/` | API Information |
+| GET | `/health` | Health Check |
+| POST | `/chat` | Ask Questions |
 
 ---
 
-# Running the Project
+# Running Locally
 
-Install dependencies
+Install backend dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the FastAPI server
+Run FastAPI
 
 ```bash
 python -m uvicorn app.main:app --reload
 ```
 
-Run the Next.js frontend
+Run frontend
 
 ```bash
 npm install
@@ -192,37 +142,41 @@ npm run dev
 
 ---
 
-# Roadmap
+# Architecture
 
-* ✅ Markdown Processing
-* ✅ Chunking
-* ✅ Embeddings
-* ✅ Chroma Cloud Integration
-* ✅ Semantic Retrieval
-* ✅ Prompt Builder
-* ✅ Gemini Integration
-* ✅ Upstash Redis Caching
-* ✅ FastAPI Backend
-* ✅ Next.js Frontend
-* ✅ Authentication
-* ✅ Chat History
-* ✅ Modern AI Chat UI
-* ✅ Responsive Design
-* ✅ Light & Dark Theme
-* ⏳ Backend Deployment (Railway)
-* ⏳ Frontend Deployment (Vercel)
+```text
+Next.js Frontend
+        │
+        ▼
+Next.js API Routes
+        │
+        ▼
+FastAPI Backend
+        │
+        ▼
+Redis Cache
+        │
+        ▼
+Gemini Embeddings
+        │
+        ▼
+Chroma Cloud
+        │
+        ▼
+Gemini LLM
+```
 
 ---
 
 # Deployment
 
-| Service  | Platform | Status    |
-| -------- | -------- | --------- |
-| Frontend | Vercel   | ⏳ Pending |
-| Backend  | Railway  | ⏳ Pending |
+| Service | Platform |
+|----------|----------|
+| Frontend | Vercel |
+| Backend | Vercel |
 
 ---
 
 # License
 
-This project is intended for educational and portfolio purposes.
+This project is intended for educational learning and portfolio purposes.
