@@ -1,7 +1,8 @@
 import { createClient } from "@/utils/supabase/server";
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 
 export async function POST(request) {
+  const requestStart = Date.now();
   try {
     // 1. Authenticate user
     const supabase = await createClient();
@@ -26,9 +27,16 @@ export async function POST(request) {
 
     let session = null;
     let actualChatId = chatid;
+    const isNewSession = !actualChatId;
+
+    // Generate UUIDs upfront for background storage references
+    if (isNewSession) {
+      actualChatId = crypto.randomUUID();
+    }
+    const messageId = crypto.randomUUID();
 
     // 3. Verify chat session ownership and active status if chatid is provided
-    if (actualChatId) {
+    if (!isNewSession) {
       const { data: existingSession, error: sessionError } = await supabase
         .from("chat_sessions")
         .select("chatid, title")
@@ -57,7 +65,11 @@ export async function POST(request) {
     try {
       fastapiRes = await fetch(`${fastapiUrl}/chat`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-Frontend-Start-Time": request.headers.get("X-Frontend-Start-Time") || Date.now().toString(),
+          "X-BFF-Start-Time": requestStart.toString(),
+        },
         body: JSON.stringify({ question: question.trim() }),
         signal: controller.signal
       });
@@ -91,60 +103,77 @@ export async function POST(request) {
       return NextResponse.json({ error: "Invalid response format from backend" }, { status: 502 });
     }
 
-    // 6. Create or update chat session dynamically
-    if (!actualChatId) {
-      const truncatedTitle = question.trim().length > 50 ? question.trim().slice(0, 47) + "..." : question.trim();
-      const { data: newSession, error: newSessionError } = await supabase
-        .from("chat_sessions")
-        .insert({
-          user_id: user.id,
-          title: truncatedTitle,
-          status: "ACTIVE"
-        })
-        .select("chatid")
-        .single();
+    // Construct synthetic message object for immediate UI updates
+    const syntheticMsg = {
+      id: messageId,
+      chatid: actualChatId,
+      user_id: user.id,
+      question: question.trim(),
+      answer: answer,
+      created_at: new Date().toISOString()
+    };
 
-      if (newSessionError) {
-        console.error("Error creating chat session dynamically:", newSessionError);
-        return NextResponse.json({ error: "Failed to create chat session" }, { status: 500 });
+    // 6. Schedule non-critical database writes to run in the background post-response
+    after(async () => {
+      try {
+        const bgSupabase = await createClient();
+
+        if (isNewSession) {
+          const truncatedTitle = question.trim().length > 50 ? question.trim().slice(0, 47) + "..." : question.trim();
+          const { error: newSessionError } = await bgSupabase
+            .from("chat_sessions")
+            .insert({
+              chatid: actualChatId,
+              user_id: user.id,
+              title: truncatedTitle,
+              status: "ACTIVE"
+            });
+          if (newSessionError) {
+            console.error("Background error creating chat session dynamically:", newSessionError);
+          }
+        } else {
+          // Update session title if default, else bubble updated_at to top
+          if (session.title === "New Chat") {
+            const initialTitle = question.trim();
+            const truncatedTitle = initialTitle.length > 50 ? initialTitle.slice(0, 47) + "..." : initialTitle;
+            await bgSupabase
+              .from("chat_sessions")
+              .update({ title: truncatedTitle, updated_at: new Date().toISOString() })
+              .eq("chatid", actualChatId);
+          } else {
+            await bgSupabase
+              .from("chat_sessions")
+              .update({ updated_at: new Date().toISOString() })
+              .eq("chatid", actualChatId);
+          }
+        }
+
+        // Save question & answer history
+        const { error: msgError } = await bgSupabase
+          .from("messages")
+          .insert({
+            id: messageId,
+            chatid: actualChatId,
+            user_id: user.id,
+            question: question.trim(),
+            answer: answer
+          });
+
+        if (msgError) {
+          console.error("Background Supabase QA message insert error:", msgError);
+        }
+      } catch (bgError) {
+        console.error("Background database task failed:", bgError);
       }
-      actualChatId = newSession.chatid;
-    } else {
-      // Update session title if default, else bubble updated_at to top
-      if (session.title === "New Chat") {
-        const initialTitle = question.trim();
-        const truncatedTitle = initialTitle.length > 50 ? initialTitle.slice(0, 47) + "..." : initialTitle;
-        await supabase
-          .from("chat_sessions")
-          .update({ title: truncatedTitle, updated_at: new Date().toISOString() })
-          .eq("chatid", actualChatId);
-      } else {
-        await supabase
-          .from("chat_sessions")
-          .update({ updated_at: new Date().toISOString() })
-          .eq("chatid", actualChatId);
-      }
-    }
+    });
 
-    // 7. Save user question & assistant answer to database in a single row
-    const { data: newMsg, error: msgError } = await supabase
-      .from("messages")
-      .insert({
-        chatid: actualChatId,
-        user_id: user.id,
-        question: question.trim(),
-        answer: answer
-      })
-      .select("id, chatid, user_id, question, answer, created_at")
-      .single();
-
-    if (msgError) {
-      console.error("Supabase QA message insert error:", msgError);
-      return NextResponse.json({ error: "Supabase insert failure" }, { status: 500 });
-    }
-
-    // 8. Return answer, chatid and database message to client
-    return NextResponse.json({ answer, chatid: actualChatId, message: newMsg });
+    // 7. Return answer, chatid, synthetic message, and timings immediately
+    return NextResponse.json({
+      answer,
+      chatid: actualChatId,
+      message: syntheticMsg,
+      timing: result.timing
+    });
   } catch (err) {
     console.error("Unexpected error in /api/chat Route Handler:", err);
     return NextResponse.json({ error: "Unexpected server exception" }, { status: 500 });

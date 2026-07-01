@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { BotIcon, PlusIcon, Trash2Icon, MoreHorizontalIcon } from "lucide-react";
+import { Spinner } from "@/components/ui/spinner";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -43,6 +44,7 @@ const user = {
 export function AppSidebar({
   activeChatId,
   history = [],
+  historyLoading,
   onSelectChat,
   onNewChat,
   onDeleteChat,
@@ -115,43 +117,51 @@ export function AppSidebar({
         <SidebarGroup>
           <SidebarGroupLabel>History</SidebarGroupLabel>
           <SidebarMenu>
-            {history.map((item) => (
-              <SidebarMenuItem key={item.chatid}>
-                <SidebarMenuButton
-                  asChild
-                  isActive={item.chatid === activeChatId}
-                  tooltip={item.title}
-                >
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onSelectChat(item.chatid);
-                    }}
+            {historyLoading ? (
+              <div className="flex items-center justify-center p-4">
+                <Spinner className="h-4 w-4 text-muted-foreground" />
+              </div>
+            ) : history.length === 0 ? (
+              <div className="text-xs text-muted-foreground p-4 text-center">No history yet</div>
+            ) : (
+              history.map((item) => (
+                <SidebarMenuItem key={item.chatid}>
+                  <SidebarMenuButton
+                    asChild
+                    isActive={item.chatid === activeChatId}
+                    tooltip={item.title}
                   >
-                    <span className="truncate">{item.title}</span>
-                  </a>
-                </SidebarMenuButton>
- 
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <SidebarMenuAction showOnHover aria-label="Conversation options">
-                      <MoreHorizontalIcon />
-                      <span className="sr-only">More options</span>
-                    </SidebarMenuAction>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent side="right" align="start" className="w-40">
-                    <DropdownMenuItem
-                      className="text-destructive focus:text-destructive focus:bg-destructive/10"
-                      onClick={() => onDeleteChat(item.chatid)}
+                    <a
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        onSelectChat(item.chatid);
+                      }}
                     >
-                      <Trash2Icon className="size-4 mr-2" />
-                      Delete
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </SidebarMenuItem>
-            ))}
+                      <span className="truncate">{item.title}</span>
+                    </a>
+                  </SidebarMenuButton>
+
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <SidebarMenuAction showOnHover aria-label="Conversation options">
+                        <MoreHorizontalIcon />
+                        <span className="sr-only">More options</span>
+                      </SidebarMenuAction>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent side="right" align="start" className="w-40">
+                      <DropdownMenuItem
+                        className="text-destructive focus:text-destructive focus:bg-destructive/10"
+                        onClick={() => onDeleteChat(item.chatid)}
+                      >
+                        <Trash2Icon className="size-4 mr-2" />
+                        Delete
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                </SidebarMenuItem>
+              ))
+            )}
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>

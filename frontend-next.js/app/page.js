@@ -14,9 +14,12 @@ export default function Home() {
   const [activeChatId, setActiveChatId] = useState(null);
   const [history, setHistory] = useState([]);
   const [messages, setMessages] = useState([]);
+  const [historyLoading, setHistoryLoading] = useState(false);
+  const [messagesLoading, setMessagesLoading] = useState(false);
 
   // Fetch active chat sessions list (only status = 'ACTIVE')
   const fetchHistory = useCallback(async () => {
+    setHistoryLoading(true);
     try {
       const res = await fetch("/api/chat-history");
       if (!res.ok) {
@@ -27,11 +30,14 @@ export default function Home() {
     } catch (err) {
       console.error("Error loading chat history:", err);
       toast.error("Could not load chat history");
+    } finally {
+      setHistoryLoading(false);
     }
   }, []);
 
   // Fetch messages for a specific active chat session
   const fetchMessages = useCallback(async (chatId) => {
+    setMessagesLoading(true);
     try {
       const res = await fetch(`/api/chat-history?chatid=${chatId}`);
       if (!res.ok) {
@@ -42,6 +48,8 @@ export default function Home() {
     } catch (err) {
       console.error("Error loading messages:", err);
       toast.error("Could not load chat messages");
+    } finally {
+      setMessagesLoading(false);
     }
   }, []);
 
@@ -126,6 +134,7 @@ export default function Home() {
             <AppSidebar
               activeChatId={activeChatId}
               history={history}
+              historyLoading={historyLoading}
               onSelectChat={handleSelectChat}
               onNewChat={handleNewChat}
               onDeleteChat={handleDeleteChat}
@@ -139,6 +148,7 @@ export default function Home() {
               messages={messages}
               setMessages={setMessages}
               refreshHistory={fetchHistory}
+              messagesLoading={messagesLoading}
             />
           </SidebarInset>
         </div>

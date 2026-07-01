@@ -35,15 +35,34 @@ class RAGChain:
         self.conversation_handler: ConversationHandler = ConversationHandler(self.client)
         logger.info("RAGChain initialized successfully.")
 
-    def ask(self, question: str) -> dict[str, Any]:
+    def ask(
+        self,
+        question: str,
+        frontend_start: str | None = None,
+        bff_start: str | None = None,
+    ) -> dict[str, Any]:
         """
         Process a user question. Routes to either Direct Gemini Conversation
         or RAG pipeline based on intent classification.
         """
         t_start = time.perf_counter()
+        fastapi_start_wall = time.time() * 1000
         validation_time = 0.0
         detection_time = 0.0
         gemini_time = 0.0
+
+        if frontend_start:
+            try:
+                fe_start_val = float(frontend_start)
+                logger.info("[PERFORMANCE LOG] Latency from Frontend to FastAPI: %.2f ms", fastapi_start_wall - fe_start_val)
+            except Exception:
+                pass
+        if bff_start:
+            try:
+                bff_start_val = float(bff_start)
+                logger.info("[PERFORMANCE LOG] Latency from BFF to FastAPI: %.2f ms", fastapi_start_wall - bff_start_val)
+            except Exception:
+                pass
 
         try:
             # 1. Validation
@@ -90,12 +109,51 @@ class RAGChain:
             logger.info("Question: %s", question)
             validation_time = time.perf_counter() - t_val_start
 
-            # 2. Intent Detection Check
+            # 2. Check Answer Cache (both RAG and Conversation)
+            t_redis_start = time.perf_counter()
+            cached_answer = redis_cache.get_answer_cache(question)
+            redis_time = time.perf_counter() - t_redis_start
+            logger.info("Redis Answer Cache Check Time: %.2f ms", redis_time * 1000)
+
+            if cached_answer is not None:
+                logger.info("Cache HIT")
+                total_time = time.perf_counter() - t_start
+
+                print("\n====================================================")
+                print("Performance Summary  [CACHE HIT]")
+                print(f"Validation        : {validation_time:.2f} sec")
+                print(f"Redis Cache Check : {redis_time:.4f} sec")
+                print("Embedding         : 0.00 sec (Cached)")
+                print("Retrieval         : 0.00 sec (Cached)")
+                print("Prompt            : 0.00 sec (Cached)")
+                print("Gemini            : 0.00 sec (Cached)")
+                print(f"Total             : {total_time:.2f} sec")
+                print("====================================================\n")
+
+                logger.info("Total Request %.2f sec", total_time)
+
+                response_data = cached_answer.copy()
+                response_data["question"] = question
+                response_data["timing"] = {
+                    "cache_hit": True,
+                    "total_time": total_time,
+                    "validation_time": validation_time,
+                    "conversation_detection_time": 0.0,
+                    "embedding_time": 0.0,
+                    "retrieval_time": 0.0,
+                    "prompt_build_time": 0.0,
+                    "gemini_time": 0.0,
+                }
+                return response_data
+
+            logger.info("Cache MISS")
+
+            # 3. Intent Detection Check
             t_detect_start = time.perf_counter()
             is_conv = self.intent_detector.is_conversational(question)
             detection_time = time.perf_counter() - t_detect_start
 
-            # 3. Direct Conversation Flow
+            # 4. Direct Conversation Flow (with Caching)
             if is_conv:
                 logger.info("Conversation Mode Detected")
                 logger.info("Skipping Embedding")
@@ -117,21 +175,28 @@ class RAGChain:
 
                     logger.info("Total Time: %.2f sec", total_time)
 
-                    return {
-                        "question": question,
+                    response_data = {
                         "answer": conv_res["answer"],
                         "sources": [],
-                        "timing": {
-                            "cache_hit": False,
-                            "total_time": total_time,
-                            "validation_time": validation_time,
-                            "conversation_detection_time": detection_time,
-                            "embedding_time": 0.0,
-                            "retrieval_time": 0.0,
-                            "prompt_build_time": 0.0,
-                            "gemini_time": gemini_time,
-                        },
+                        "created_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+                        "model": MODEL_NAME,
                     }
+                    # Save conversational response to Redis Cache
+                    redis_cache.set_answer_cache(question, response_data)
+
+                    response_data_with_timing = response_data.copy()
+                    response_data_with_timing["question"] = question
+                    response_data_with_timing["timing"] = {
+                        "cache_hit": False,
+                        "total_time": total_time,
+                        "validation_time": validation_time,
+                        "conversation_detection_time": detection_time,
+                        "embedding_time": 0.0,
+                        "retrieval_time": 0.0,
+                        "prompt_build_time": 0.0,
+                        "gemini_time": gemini_time,
+                    }
+                    return response_data_with_timing
                 except Exception as error:
                     logger.exception("Conversation flow failure")
                     total_time = time.perf_counter() - t_start
@@ -162,41 +227,6 @@ class RAGChain:
                             "gemini_time": gemini_time,
                         },
                     }
-
-            # 4. Check RAG Answer Cache
-            cached_answer = redis_cache.get_answer_cache(question)
-            if cached_answer is not None:
-                logger.info("Cache HIT")
-                total_time = time.perf_counter() - t_start
-
-                print("\n====================================================")
-                print("Performance Summary  [CACHE HIT]")
-                print(f"Validation        : {validation_time:.2f} sec")
-                print(f"Conversation Det  : {detection_time:.2f} sec")
-                print("Embedding         : 0.00 sec (Cached)")
-                print("Retrieval         : 0.00 sec (Cached)")
-                print("Prompt            : 0.00 sec (Cached)")
-                print("Gemini            : 0.00 sec (Cached)")
-                print(f"Total             : {total_time:.2f} sec")
-                print("====================================================\n")
-
-                logger.info("Total Request %.2f sec", total_time)
-
-                response_data = cached_answer.copy()
-                response_data["question"] = question
-                response_data["timing"] = {
-                    "cache_hit": True,
-                    "total_time": total_time,
-                    "validation_time": validation_time,
-                    "conversation_detection_time": detection_time,
-                    "embedding_time": 0.0,
-                    "retrieval_time": 0.0,
-                    "prompt_build_time": 0.0,
-                    "gemini_time": 0.0,
-                }
-                return response_data
-
-            logger.info("Cache MISS")
 
             # 5. Check Embedding Cache
             query_embedding = redis_cache.get_embedding_cache(question)

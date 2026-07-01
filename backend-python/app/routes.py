@@ -1,6 +1,6 @@
 import logging
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 
 from app.schemas import (
     ChatRequest,
@@ -62,11 +62,18 @@ async def health():
     "/chat",
     response_model=ChatResponse,
 )
-async def chat(request: ChatRequest):
+def chat(request: ChatRequest, http_request: Request):
     try:
         logger.info("Question: %s", request.question)
 
-        result = chatbot.ask(request.question)
+        frontend_start = http_request.headers.get("x-frontend-start-time")
+        bff_start = http_request.headers.get("x-bff-start-time")
+
+        result = chatbot.ask(
+            question=request.question,
+            frontend_start=frontend_start,
+            bff_start=bff_start,
+        )
 
         return ChatResponse(
             question=request.question,
